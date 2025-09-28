@@ -20,19 +20,57 @@
     </style>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3E6N9ZEB5"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-Z3E6N9ZEB5');
-</script>
-
 <body>
 <h1>Hello World!</h1>
 <p>Welcome to <b>shugyo.dev</b>!</p>
 <p>Under construction!</p>
+<div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;background:#222;color:#fff;padding:15px;display:flex;justify-content:space-between;align-items:center;z-index:1000;">
+    <span>We use cookies for analytics. Do you accept?</span>
+    <div>
+        <button onclick="acceptCookies()" style="margin-right:10px;padding:5px 10px;">Accept</button>
+        <button onclick="declineCookies()" style="padding:5px 10px;">Decline</button>
+    </div>
+</div>
+<script>
+    const banner = document.getElementById('cookie-banner');
+    const consent = localStorage.getItem('cookie-consent');
+
+    function loadGoogleAnalytics() {
+      // Replace with your Measurement ID
+      const GA_ID = 'G-Z3E6N9ZEB5';
+
+      // Load GA script dynamically
+      const gtagScript = document.createElement('script');
+      gtagScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+      gtagScript.async = true;
+      document.head.appendChild(gtagScript);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', GA_ID);
+    }
+
+    function acceptCookies() {
+      localStorage.setItem('cookie-consent', 'accepted');
+      banner.style.display = 'none';
+      loadGoogleAnalytics();
+    }
+
+    function declineCookies() {
+      localStorage.setItem('cookie-consent', 'declined');
+      banner.style.display = 'none';
+    }
+
+    // Check stored preference
+    if (consent === 'accepted') {
+      loadGoogleAnalytics();
+      banner.style.display = 'none';
+    } else if (consent === 'declined') {
+      banner.style.display = 'none';
+    }
+</script>
+
 </body>
 </html>
