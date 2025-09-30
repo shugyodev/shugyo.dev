@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "#0000 - Names are important"
+title:  "#0000 — Names are important"
 date:   2025-09-30 23:33:00 +0200
 categories: philosophy
 ---
@@ -23,7 +23,7 @@ _Names are important._
 
 I have an on-and-off relationship with learning Japanese. Time is always scarce, and the list of things I want to do grows faster than I can manage. Long ago, I stumbled upon a word that stayed with me:
 
-**修行** (IPA: [ɕɨɡʲo̞ː], Hepburn: shugyō)
+**[修行](https://jisho.org/word/修行)** ([IPA](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet): [ɕɨɡʲo̞ː], [Hepburn](https://en.wikipedia.org/wiki/Hepburn_romanization): shugyō)
 
 It’s made of two characters:
 * 修 — discipline, study, master, conduct oneself well
