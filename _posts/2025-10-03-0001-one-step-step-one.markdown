@@ -18,7 +18,7 @@ I imagine, for many this is a scary journey to begin, but here I am to help you 
 
 In this series, I will introduce you to a 5+1 step approach, 
 that I recommend to most of my students who are preparing for a coding interview. 
-1. Start with the things you know [[{{ "#0002 — The Things They Told You" }}]({% post_url 2025-10-04-0002-the-things-they-told-you %})]
+1. Start with the things you know [[{{ "#0002 — The Things They Showed You" }}]({% post_url 2025-10-04-0002-the-things-they-showed-you %})]
 2. Solidify your understanding of the problem [[{{ "#0003 — The Things They Hid From You" }}]({% post_url 2025-10-05-0003-the-things-they-hid-from-you %})]
 3. Use your intuition
 4. Just write it down

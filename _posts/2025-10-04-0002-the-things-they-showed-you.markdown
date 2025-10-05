@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "#0002 — The Things They Told You"
+title:  "#0002 — The Things They Showed You"
 series: Coding Interview Fundamentals
 date:   2025-10-04 23:33:00 +0200
 categories: [interview]
@@ -21,7 +21,7 @@ such as THING and NIGHT.
 ```
 
 It doesn’t matter how difficult the task is, you're never completely in the dark. 
-You can always start with the things you already know. Things the interviewers stated in the problem statement. The things they told you.
+You can always start with the things you already know. Things the interviewers stated in the problem statement. The Things They Showed You.
 
 #### Tip#1 — Identify inputs and outputs
 
