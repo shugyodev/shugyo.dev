@@ -16,13 +16,14 @@ He may not even know what impact he had on me, but soon after becoming a full-ti
 I wanted to make the first interview experience good and memorable for as many students as I could. 
 I imagine, for many this is a scary journey to begin, but here I am to help you make one step, step one. 
 
-In this series, I will introduce you to a five-step approach, 
+In this series, I will introduce you to a 5+1 step approach, 
 that I recommend to most of my students who are preparing for a coding interview. 
-1. Start with the things you know  [[{{ "#0002 — The Things They Told You" }}]({% post_url 2025-10-04-0002-the-things-they-told-you %})]
-2. Solidify your understanding of the problem
+1. Start with the things you know [[{{ "#0002 — The Things They Told You" }}]({% post_url 2025-10-04-0002-the-things-they-told-you %})]
+2. Solidify your understanding of the problem [[{{ "#0003 — The Things They Hid From You" }}]({% post_url 2025-10-05-0003-the-things-they-hid-from-you %})]
 3. Use your intuition
 4. Just write it down
 5. Don't stop, analyse
+6. Be flexible
 
 You may ask, why do I start with coding first? 
 While there is a lot (way more, in fact) to talk about regarding theoretical questions, 

@@ -43,7 +43,7 @@ I'm not saying that you shouldn't try to make them as concise a possible, but do
 All modern IDE-s will autocomplete your variable names, so you don't need to worry about how much effort it is to type them out.
 
 Additionally, `word1` and `word2` are more explicit than `w1` and `w2`.
-In general you should try to avoid `0` and `1` in variable names, as they are too similar to `O` and `l`.
+In general, you should try to avoid `0` and `1` in variable names, as they are too similar to `O` and `l`.
 For this reason, I'd prefer `wordA` and `wordB` over `word1` and `word2`. 
 If you don't want to indicate that they are words, you may even go with `a` and `b`.
 
@@ -93,7 +93,7 @@ but you already hinted to the interviewers that you can extract some important i
 and you have a basic good taste for code design and style. All that within the first few seconds.
 
 **⚡ Your Turn:** 
-Try turning a few problem statements into function signatures, and summarise what you did in plain english.
+Try turning a few problem statements into function signatures (at least 2-3 per difficulty), and summarise what you did in plain english.
 I recommend going on [LeetCode](https://leetcode.com), and repeat: 
 - Read the problem statements on the left (do not glance at the right)
 - Come up with a clean function signature
@@ -108,4 +108,4 @@ I know they use a `Solution` class, and expect the implementation within an inst
 
 You don't need to do that.
 
-When you’re ready (you find this step easy, even on hard problems), continue with [next post coming soon].
+When you’re ready (you find this step easy, even on hard problems), continue with [{{ page.next.title }}]({{ page.next.url }}).
