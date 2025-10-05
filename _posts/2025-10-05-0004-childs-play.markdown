@@ -1,0 +1,191 @@
+---
+layout: post
+title:  "#0004 — Child's Play"
+series: Coding Interview Fundamentals
+date:   2025-10-05 14:15:00 +0200
+categories: [interview]
+---
+This post continues from [{{ page.previous.title }}]({{ page.previous.url }}).
+If you haven’t read it yet, please do so before continuing.
+
+**Problem Statement:**
+```
+Given two words, decide if they are anagrams. 
+An anagram is a word or phrase formed by rearranging the letters of another,
+such as THING and NIGHT. 
+```
+
+**Previous State:**
+```python
+def are_anagrams(word_a: str, word_b: str) -> bool:
+    pass
+
+ 
+def test_are_anagrams(a: str, b: str, expected: bool) -> None:
+    actual = are_anagrams(a, b)
+    print('{} - expected: {}, actual: {}, a: "{}", b: "{}"'.format(
+        "PASS" if expected == actual else "FAIL",
+        expected, actual, a, b
+    ))
+
+
+def test_fail_are_anagrams(a: str, b: str) -> None:
+    try:
+        actual = are_anagrams(a, b)
+    except:
+           actual = "expected failure"
+           result = "PASS"
+    else:
+           result = "FAIL"
+    finally:
+        print(f'{result} - actual: {actual}, a: "{a}", b: "{b}"')
+
+
+test_are_anagrams("THING", "NIGHT", True)
+test_are_anagrams("THING", "HELICOPTER", False)
+test_are_anagrams("Thing", "Night", True)
+test_are_anagrams("I AM LORD VOLDEMORT!", "TOM.MARVOLO.RIDDLE", True)
+test_are_anagrams("BOLD", "BLOOD", False)
+test_are_anagrams("BATTER", "BARTER", False)
+test_are_anagrams("", "", True)
+test_are_anagrams("AB"*10_000_000, "BA"*10_000_000, True)
+test_fail_are_anagrams("", None)
+test_fail_are_anagrams(None, "")
+```
+
+This step involves the greatest amount of thinking.
+You will need to explain to the interviewer in detail how you are going to solve the problem.
+To me, this is at the core of all programming. Creative problem-solving.
+Languages, syntax, performance, patterns, and style — none of that matters if you don’t get this step right.
+
+It doesn't mean this step is inherently more difficult, or any less fun.
+Quite the opposite — if done right, it’s child’s play
+
+#### Tip#1 — Talk more, write less
+
+We are at the third step of an originally five-step approach, and I'm asking you to not write any implementation yet. Why?
+Because the crux of programming happens before you start writing code — or at least it should.
+
+**You should not write the implementation until you know what you are going to write.**
+
+You explain your strategy, and once the interviewers are happy about it, only then you should turn it into code.
+
+There are many good reasons for this, to name a few:
+- The more you practice mental algorithmization, the better — and ultimately faster — problem-solver you become.
+- Interviewers want to understand your thought process, but they can’t read minds.
+- Some candidates code in silence, as they are not used to explaining their thought processes.
+- Many can’t explain AND write at the same time without hurting both.
+- You speak faster than you write, so if there’s a flaw in your logic, it will surface early — fail-fast again.
+- Your initial idea may be working, but inefficient or trivial. The interviewer might not even want to see that, but start talking about optimizations.
+
+#### Tip#2 — Think about how would a child do it
+
+If you have no solution in mind, don’t panic.
+Most of these algorithmic problems are not knowledge based, they are problem-solving tasks.
+Many are simple enough that even a child could solve them on paper for small inputs — given enough time.
+
+Take a step back from variables, functions, loops and all those things that come with a programmer's mindset.
+Really — imagine how a child would do it.
+
+Let's say I have `THING` and `NIGHT` written with large letters on a piece of paper, and I ask my nephew to tell if they are anagrams.
+He would look at it for a while, and say _"yes"_.
+If I ask him how does he know, he would be confused and say _"it's obvious... they have the same letters..."_.
+
+The inputs are small enough that one doesn't need to think about it a lot. It is indeed obvious.
+But what if I make the inputs just a bit larger?
+
+`TOM MARVOLO RIDDLE` vs `I AM LORD VOLDEMORT`
+
+He wouldn't be able to solve this so easily, but he could still do it.
+And this is where creativity enters the picture.
+You’d be surprised how differently people can approach the same problem, 
+even when it looks simple and the solution feels obvious.
+
+Two very common ways people might solve this on paper are:
+- They start with the text on the left and cross out its first letter. 
+Then cross out the first occurrence of the same letter on the right as well, before moving on to the next letter.
+They keep doing this until all the letters are crossed out on both sides; until there is a letter on the left that is not on the right; 
+or until everything is crossed out on the left, but something is still left on the right.
+- They start with the text on the left, and cross out all the occurrences of its first letter, while counting them. Then cross out and count all occurrences of the same letter on the right as well, before moving on to the next letter.
+They keep doing this until all the letter counts are matched; until there is a letter on the left with a count mismatch on the right; or until everything is crossed out on the left, but something is still left on the right.
+
+Note that both are completely valid approaches, and you don't need to be a programmer to come up with these.
+
+I’m not suggesting that intuitive or brute-force solutions are always best (though sometimes they are), I only recommend this exercise as a tool, to give your brain some flexibility; and to help you proceed, when you feel absolutely out of ideas.
+
+If you are able to solve a problem this way, it means your brain has an algorithm for it.
+Your task is to analyze what your brain instinctively does, and that is a beautiful process. Make sure you share it with the interviewer, and narrate your thought process along the way.
+
+#### Tip#3 — Be explicit
+
+Now that you have a solution in mind, collect your thoughts and turn them into a clear strategy.
+It doesn't have to follow any rigid structure, but it must have clear steps with order and purpose.
+
+By doing so, you demonstrate your ability to take complex ideas, simplify them, and discuss them clearly. This is crucial in our profession.
+Most people who get tangled in their own code can't even verbalize what exactly they were trying to do in the first place. They didn't think about it enough.
+
+Some will say that their brain just 'works differently', they have to jump into the code and 'explore' the solution along the way.
+I strongly disagree with this sentiment, especially for simple algorithmic exercises.
+**This is a skill, that can be and should be trained.**
+
+That said, brains indeed work differently, so if your intuitive solution is not the cleanest, most optimal one, fear not. You are not alone, and it doesn't say much about how good of a programmer you can become.
+For me, the first approach feels the most intuitive on paper, so I’ll use it as an example.
+
+Let's see two examples of how it can be formalized as a strategy.
+
+_"I'll check each letter in one string, and try to find it in the other.
+I will ignore letter case, whitespaces, punctuation marks etc...
+If they all match the strings are anagrams, if there is a mismatch, they aren't."_
+
+This is fine. If you can phrase it like this, that's already better than average. However, as an interviewer, I find it a bit vague. It's unclear to me how will you ignore the non-letters, for example. How will you ensure that an occurrence was only counted once?
+What exactly are the match and mismatch exit conditions?
+
+If you can turn this into a working code, then it means you knew what you wanted to do, just didn't phrase it precisely enough. Acceptable.
+But if you can’t turn this into working code and only realize missing subproblems once you’re elbow-deep in implementation — that’s an issue for me
+
+_(subproblem 1) "To ignore letter case, I'll turn both inputs full upper case."_
+
+_(subproblem 2) "To decide if a character is letter, I'll check if it's between `A` and `Z`."_
+
+_(high level plan) "I'm planning to remove letters of the first string one by one from the second string to see if there are any differences"_
+
+_(subproblem 3) "Since strings are immutable, and I can't remove letters from them, so I'll turn them into lists of uppercase letters instead."_
+
+_(detailed plan) "I'll iterate through the letters of the first list, and for each, I'll iterate through the second list to find them.
+If I can't find one, it means that the first contained a letter that the second didn't, therefore I can exit with False.
+If I can find it, I remove that occurrence from the second list, so I won't consider it again.
+Repeating this, eventually I will either exit as mentioned, or reach the end of the first list.
+If the second list is still non-empty, that means the second contained a letter that the first didn't, therefore I can exit with False.
+If it was empty, that means they were anagrams, therefore I can exit with True."_
+
+I'm not suggesting you should always be this verbose, but here are a few points to consider:
+- This version makes the strategy so explicit that turning it into code becomes almost trivial.
+- It also makes your strategy so clear that interviewers might believe you could code it — and not even ask you to. Instead, they start talking about enhancements and optimizations.
+- You showcased your skill of taking a problem and decomposing it into smaller subproblems.
+- You showcased your skill to explain things clearly.
+- There aren't many things you can remove from this summary without losing information.
+
+Of course, you won't be able to come up with the clearest and most concise summary of your strategy in an interview situation, and it's fine, but you should still strive to do it.
+
+Some candidates wrap simple ideas in long, decorative sentences to sound more sophisticated. It may sound impressive to some, but most interviewers will quickly notice there’s not much being said. Best case they will think you lack the ability to convey thoughts efficiently, worst case they will think you are intentionally wasting time.
+
+This is also a skill, that improves rapidly with practice.
+
+#### Tip#4 — Be honest
+
+Some candidates have solved the problem before but try to hide it, hoping to look clever by “figuring it out” on the spot.
+Don’t bother — interviewers value honesty far more than theatrics.
+If you know it, say it. Just be ready to back it up when you start coding.
+
+
+**⚡ Your Turn:**
+Use the problems from the previous exercises (you should have 10-15 at least), and
+- think about how a non-programmer might solve it on paper
+- decompose that solution into a strategy
+- try to make it as concise as possible without losing essential information
+
+This is a crucial exercise. Don't skip it!
+You may find this step difficult, even on easy problems. Practice makes perfect.
+
+When you’re ready, continue with [next post coming soon].
+

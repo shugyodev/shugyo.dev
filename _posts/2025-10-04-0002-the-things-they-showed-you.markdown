@@ -6,7 +6,7 @@ date:   2025-10-04 23:33:00 +0200
 categories: [interview]
 ---
 This post continues from [{{ page.previous.title }}]({{ page.previous.url }}).
-If you haven’t read that yet, do so, before continuing.
+If you haven’t read it yet, please do so before continuing.
 
 In this series, I will use Python, as it's the most popular language for coding interviews.
 Some concepts are Python-specific, 
@@ -21,7 +21,8 @@ such as THING and NIGHT.
 ```
 
 It doesn’t matter how difficult the task is, you're never completely in the dark. 
-You can always start with the things you already know. Things the interviewers stated in the problem statement. The Things They Showed You.
+As a first step, you can always start with the things you already know. 
+Things the interviewers stated in the problem statement. The things they showed you.
 
 #### Tip#1 — Identify inputs and outputs
 
