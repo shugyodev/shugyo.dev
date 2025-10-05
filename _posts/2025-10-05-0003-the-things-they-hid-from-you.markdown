@@ -166,7 +166,7 @@ You don't need to write down the scenario names, as it would take too much time 
 # missing left      
 ```
 
-#### Tip#3 — Create a safety net
+#### Tip#4 — Create a safety net
 
 The power of disciplined practice is that it helps prevent issues getting out of control.
 One very typical scenario is that the candidate jumps at the implementation without much thought,
@@ -257,7 +257,7 @@ However, when the output is not a bool (so it's obvious why a test fails), it ma
 ```python
 def test_are_anagrams(a: str, b: str, expected: bool) -> None:
     actual = are_anagrams(a, b)
-    print(f'a: "{a}", b: "{b}", 'expected: {expected}, actual: {actual}')
+    print(f'a: "{a}", b: "{b}", expected: {expected}, actual: {actual}')
     print(f'    {expected == actual}')
 ```
 
@@ -267,7 +267,7 @@ into `"PASS"` and `"FAIL"` messages.
 ```python
 def test_are_anagrams(a: str, b: str, expected: bool) -> None:
     actual = are_anagrams(a, b)
-    print(f'a: "{a}", b: "{b}", 'expected: {expected}, actual: {actual}')
+    print(f'a: "{a}", b: "{b}", expected: {expected}, actual: {actual}')
     print(f'    {"PASS" if expected == actual else "FAIL"}')
 ```
 
@@ -281,7 +281,7 @@ Finally, for readability, I would:
 def test_are_anagrams(a: str, b: str, expected: bool) -> None:
     actual = are_anagrams(a, b)
     print('{} - expected: {}, actual: {}, a: "{}", b: "{}"'.format(
-        "PASS" if expected == actual else "FAIL"
+        "PASS" if expected == actual else "FAIL",
         expected, actual, a, b
     ))
 ```
