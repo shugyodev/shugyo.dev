@@ -177,6 +177,11 @@ Some candidates have solved the problem before but try to hide it, hoping to loo
 Don’t bother — interviewers value honesty far more than theatrics.
 If you know it, say it. Just be ready to back it up when you start coding.
 
+Well done! We’ve taken the leap from recognizing the problem to reasoning about its solution — without writing a single line of code. 
+This step demonstrates that you can think clearly, structure your thoughts, and communicate them effectively — three extremely important skills. 
+You’ve shown that you don’t just code; you understand what you’re coding and why. 
+By practicing this discipline, you’re building the habit of solving problems methodically rather than mechanically.
+
 
 **⚡ Your Turn:**
 Use the problems from the previous exercises (you should have 10-15 at least), and
