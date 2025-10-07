@@ -23,6 +23,8 @@ title: "SHUGYŌ"
 description:  "Discipline Driven Development"
 logo: "/images/shugyo-logo.png"
 
+google_analytics: G-Z3E6N9ZEB5
+
 # Build settings
 #theme: jekyll-theme-so-simple
 remote_theme: "mmistakes/so-simple-theme@3.2.0"
