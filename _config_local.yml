@@ -28,7 +28,6 @@ google_analytics: G-Z3E6N9ZEB5
 # Build settings
 theme: jekyll-theme-so-simple
 #remote_theme: "mmistakes/so-simple-theme@3.2.0"
-skin: "/assets/css/skins/custom.css"
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
