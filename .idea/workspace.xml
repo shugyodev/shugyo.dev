@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9c777f6a-5121-4966-9ce3-89f2f6ef78d1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/images/shugyo-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/google-analytics.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/icon-github.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/icon-github.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/icon-twitter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/icon-twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/social.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2025-09-30-0000-names-are-important.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2025-10-03-0001-one-step-step-one.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2025-10-04-0002-the-things-they-showed-you.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2025-10-05-0003-the-things-they-hid-from-you.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2025-10-05-0004-childs-play.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minima.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minima/_base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minima/_layout.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/minima/_syntax-highlighting.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon-96x96.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site.webmanifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-manifest-192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web-app-manifest-512x512.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="33kXPY5lBPk2j3vqsF2igDva7mr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/Shugyo/Documents/GitHub/shugyo.dev/images"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9c777f6a-5121-4966-9ce3-89f2f6ef78d1" name="Changes" comment="" />
+      <created>1759862019947</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759862019947</updated>
+    </task>
+    <servers />
+  </component>
+</project>

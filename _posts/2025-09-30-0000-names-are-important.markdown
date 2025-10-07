@@ -13,7 +13,7 @@ I could talk about myself at length, as I have a healthy amount of narcissism, b
 
 I could lay out my plans, as I have many, some are more refined than others, but no, I don’t want to box myself in yet. The exact details aren’t important either.
 
-Instead, I’ll explain the blog’s name. I chose it carefully. From that, you can learn just enough about me, what I’m trying to do here.  Names are important.
+Instead, I’ll explain the blog’s name. I chose it carefully. From that, you can learn just enough about me and what I’m trying to do here.  Names are important.
 
 I have an on-and-off relationship with learning Japanese. Time is always scarce, and the list of things I want to do grows faster than I can manage. Long ago, I stumbled upon a word that stayed with me:
 
